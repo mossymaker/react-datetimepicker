@@ -109,9 +109,9 @@ class ApplyCancelButtons extends React.Component {
       styleLocal = addFocusStyle(this.state.cancelFocus, style);
     }
     return (
-      <div
+      <button
+        type="button"
         className={className}
-        role="button"
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
         onClick={onClick}
@@ -122,7 +122,7 @@ class ApplyCancelButtons extends React.Component {
         onBlur={onBlur}
       >
         {text}
-      </div>
+      </button>
     );
   }
 
